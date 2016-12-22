@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock & Roll with Ember.js</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{content-for 'head'}}
+
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/rarwe-demo.css">
+
+    {{content-for 'head-footer'}}
+  </head>
+  <body>
+<!--     <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="book-promo">
+        <span>Want to go large? Check out the book and build the full application:</span>
+        <a class="btn btn-success link" href="http://rockandrollwithemberjs.com">Let's do this!</a>
+      </div>
+    </nav> -->
+    {{content-for 'body'}}
+
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/rarwe-demo.js"></script>
+    <script src="/js/events.js"></script>
+
+    {{content-for 'body-footer'}}
+  </body>
+</html>
